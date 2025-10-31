@@ -38,8 +38,8 @@ COPY . /app/
 # Copy previous image media directory
 # COPY --from=previous /app/media /app/media
 
-# Set execute permissions for the entrypoint script
-RUN chmod +x /app/entrypoint.sh
+# # Set execute permissions for the entrypoint script
+# RUN chmod +x /app/entrypoint.sh
 
 # Set the entrypoint script
 # ENTRYPOINT ["sh", "/app/entrypoint.sh"]
