@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-jo7jn_c^&qq8csh9bp^heo&wd0v1c_bf6l@p*edtmt4kea%2)2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["fundezer-fundezer-l8gi2m-b75c0f-157-173-123-193.traefik.me"]
+ALLOWED_HOSTS = ["fundezer-fundezer-l8gi2m-b75c0f-157-173-123-193.traefik.me", "127.0.0.1"]
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = "fundezer_host.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR, "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
